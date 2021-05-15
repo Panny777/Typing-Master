@@ -151,8 +151,10 @@ class Game:
         self.screen.blit(self.bg,(0,0))
         msg = "Typing Speed Test"
         author = "Developed by Panny Tech"
+        phone_no = "+255621433903"
         self.draw_text(self.screen, msg,60, 70,self.HEAD_C)
-        self.draw_text(self.screen, author,480, 30,self.BOTTOM_C)
+        self.draw_text(self.screen, author,450, 30,self.BOTTOM_C)
+        self.draw_text(self.screen, phone_no,480, 30,self.BOTTOM_C)
         # draw the rectangle for input box
         pygame.draw.rect(self.screen,(255,192,25), (50,250,650,50), 2)
 
@@ -162,3 +164,5 @@ class Game:
 
 
 Game().run()
+
+
